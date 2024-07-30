@@ -1,0 +1,108 @@
+.container {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+  max-width: calc(100vw - 20px); /* Adjusted to allow full-width dragging */
+  max-height: calc(100vh - 20px); /* Prevent the container from exceeding viewport height */
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+  color: #38979e;
+}
+
+.iconButton {
+  cursor: pointer;
+  color: #38979e;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.iconButton:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 16px;
+  overflow: auto;
+  height: calc(100% - 40px); /* Adjust based on header height */
+  cursor: grab; /* Show grab cursor over the content */
+}
+
+.resizeHandle {
+  position: absolute;
+  background: rgba(56, 151, 158, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.resizeHandle.se {
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  cursor: se-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #38979e; /* Opaque background */
+  z-index: 1001; /* Ensure it covers the content */
+}
+
+.resizeIcon {
+  color: #fff;
+  font-size: 16px;
+}
+
+.resizeHandle.s {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  cursor: s-resize;
+}
+
+.resizeHandle.e {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  cursor: e-resize;
+}
+
+.resizeHandle:hover {
+  background: rgba(56, 151, 158, 0.8);
+}
+
+.shrinkTab {
+  height: 50px;
+  bottom: 0;
+  width: 150px;
+  transition: all 0.3s ease;
+  position: fixed;
+}

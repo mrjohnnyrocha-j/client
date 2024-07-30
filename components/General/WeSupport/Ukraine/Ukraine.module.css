@@ -1,0 +1,99 @@
+.supportContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(23, 23, 23, 0.8); /* Added transparency */
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 2px;
+  border: 1px solid #38979e;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: column; /* Centered vertically */
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.mainText {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ukraine {
+  text-transform: uppercase;
+}
+
+.ukraine span {
+  display: inline-block;
+}
+
+.ukraineYellow {
+  color: yellow;
+}
+
+.ukraineBlue {
+  color: rgb(83, 176, 219);
+}
+
+.mottoContainer {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.mottoTheme {
+  font-size: 0.8rem;
+  font-family: 'Heroic', sans-serif; /* Ensure to add this font in your global styles or import it */
+  color: #f0ad4e; /* Heroic font color */
+  display: block;
+}
+
+.donationLinks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.donationLinks a {
+  color: #38979e;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.donationLinks a:hover {
+  color: #00cc00;
+}
+
+.donationLinks a svg {
+  font-size: 20px;
+  margin-bottom: 5px;
+}

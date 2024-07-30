@@ -1,0 +1,236 @@
+/* General styles for the entire calendar container */
+.calendarContainer {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+  max-height: 100vh; /* Ensures the container takes the full viewport height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Styling for view options (hourly, daily, weekly, monthly) */
+.viewOptions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.viewOptions button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.viewOptions button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the dropdown select element */
+.select {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* Container for sections with work center and table sections */
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 80vh; /* Restricts the height to allow scrolling */
+  width: 100%;
+}
+
+/* Work center section styling */
+.workCenterSection {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Table section styling */
+.tableSection {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General table container styling */
+.tableContainer {
+  margin: 20px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.tableContainer th,
+.tableContainer td {
+  border: 1px solid #dddddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.tableContainer th {
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+  background-color: #f1f1f1;
+}
+
+.tableContainer th:hover {
+  background-color: #e2e6ea;
+}
+
+/* Expand button styling */
+.expandButton {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.expandButton:hover {
+  background-color: #0056b3;
+}
+
+/* Stage table styling */
+.stageTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.stageTable th,
+.stageTable td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+}
+
+/* Factory plan styling */
+.factoryPlan {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.factoryPlan h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.factoryPlan .sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.factoryPlan .sections button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.factoryPlan .sections button:hover {
+  background-color: #0056b3;
+}
+
+/* Work center container styling */
+.workCenterContainer {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar grid styling */
+.calendarGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.eventBar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.eventBar:hover {
+  background-color: #0056b3;
+}

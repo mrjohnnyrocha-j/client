@@ -1,0 +1,23 @@
+.fileList {
+    padding: 10px;
+  }
+  
+  .fileItem {
+    padding: 10px;
+    margin: 10px 0;
+    color: #38979e;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .fileItem:hover {
+    background-color: #e9ecef;
+  }
+  
+  .fileItem h3 {
+    margin: 0;
+  }
+  

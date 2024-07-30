@@ -1,0 +1,40 @@
+/* styles/videos.module.css */
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--theme-background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.videoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.videoPlayer {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.loadMoreButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loadMoreButton:hover {
+  background-color: #0056b3;
+}

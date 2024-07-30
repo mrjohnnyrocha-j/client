@@ -1,0 +1,34 @@
+.tableContainer {
+    margin: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+    background-color: #ffffff;
+  }
+  
+  .tableContainer th, .tableContainer td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .tableContainer th {
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .tableContainer th:hover {
+    background-color: #e2e6ea;
+  }
+  

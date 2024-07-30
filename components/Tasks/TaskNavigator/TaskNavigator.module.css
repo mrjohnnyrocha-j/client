@@ -1,0 +1,64 @@
+.taskNavigator {
+    width: 200px;
+    background-color: #1b1f23;
+    color: #38979e;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .taskNavigator ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .taskNavigator li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .taskNavigator li:hover {
+    background-color: #e9ecef;
+  }
+  
+  .lowerSidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    transition: width 0.3s;
+    overflow-x: hidden;
+  }
+  
+  .lowerSidebar:hover {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .lowerSidebar a {
+    color: #38979e;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, justify-content 0.3s ease;
+  }
+  
+  .lowerSidebar:hover a {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .lowerSidebar a:hover {
+    background-color: #232a27;
+    color: #38979e;
+  }
+  
+  .lowerSidebar a.active {
+    background-color: #38979e;
+    color: white;
+  }
+  

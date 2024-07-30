@@ -1,0 +1,31 @@
+.finalMenu {
+    padding: 20px;
+  }
+  
+  .confirmation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px;
+    background-color: #38979e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #2e7d83;
+  }
+  
+  .changedResources, .plans {
+    margin-top: 20px;
+  }
+  
+  .filters {
+    margin-top: 10px;
+  }
+  

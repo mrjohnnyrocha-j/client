@@ -1,0 +1,63 @@
+.shareWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(23, 23, 23, 0.9);
+    padding: 20px;
+    border: 1px solid #38979e;
+    border-radius: 8px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .closeIcon {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .message {
+    color: white;
+  }
+  
+  .shareInput {
+    padding: 10px;
+    background-color: #333333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+  }
+  
+  .shareButton {
+    padding: 10px 15px;
+    background-color: #38979e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .shareButton:hover {
+    background-color: #007bff;
+  }
+  

@@ -1,0 +1,308 @@
+/* globals.css */
+
+:root {
+  --theme-color: #1c1b1b;
+  --theme-color-darker: #181818;
+  --theme-color-lighter: #1e1e1e;
+  --accent-color: #38979e;
+  --text-color: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.7);
+  --active-tab-color: #0d0d0d; /* Darker variation for active tab */
+}
+
+body {
+  transition: background-color 0.5s ease-in-out;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  z-index: 3;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-color-darker);
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px var(--shadow-color);
+  border-right: 1px solid var(--theme-color-lighter);
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  width: 17%;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover ~ .main-content {
+  width: 83%;
+}
+
+.lowerSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--theme-color-lighter);
+  padding: 20px;
+  box-shadow: 2px 0 5px var(--shadow-color);
+  border-right: 1px solid var(--theme-color-darker);
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  color: black; /* Default text color */
+  border: 1px solid var(--theme-color-darker);
+  box-shadow: 2px 0 5px rgba(9, 44, 52, 0.1);
+  text-align: center;
+  justify-content: center;
+  margin: 5px 0;
+  position: relative; /* To position the pseudo-element for the active tab */
+}
+
+.sidebarItem:hover {
+  background-color: var(--theme-color-lighter);
+  color: black; /* Text color on hover */
+}
+
+.active {
+  background-color: var(--active-tab-color); /* Darker active tab color */
+  font-weight: bold;
+  color: var(--text-color); /* Active text color */
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid var(--accent-color); /* Top border with accent color */
+  border-left: 4px solid var(--accent-color); /* Left border with accent color */
+  border-right: 4px solid var(--accent-color); /* Right border with accent color */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)); /* Light effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Shadow to enhance the effect */
+  z-index: -1; /* Place the pseudo-element behind the actual content */
+  border-bottom: 0; /* No bottom border to create the effect of light coming from above */
+}
+
+.itemText {
+  margin-left: 10px;
+  display: none;
+  color: rgb(200, 186, 186); /* Default text color */
+  text-shadow: 1px 1px 1px rgba(3, 44, 34, 0.5); /* Add shadow to text */
+}
+
+.sidebarItem:hover .itemText, .active .itemText {
+  display: inline;
+  color: rgb(228, 228, 228); /* Ensure text color is black on hover and active */
+  text-shadow: 1px 1px 1px rgba(3, 44, 34, 0.5); /* Add shadow to text */
+}
+
+.tabIcon {
+  color: var(--accent-color); /* Default icon color */
+}
+
+.shrinkTab {
+  animation: shrinkTab 0.5s ease forwards;
+}
+
+@keyframes shrinkTab {
+  to {
+    height: 50px; /* Fixed height for the rightmost tab */
+    width: 150px; /* Fixed width for the rightmost tab */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.flashDown {
+  animation: flashDown 1s ease forwards;
+}
+
+@keyframes flashDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tvPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--theme-color-darker);
+}
+
+.header {
+  background-color: var(--theme-color-lighter);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--theme-color-lighter);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navItem {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: var(--accent-color);
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchBar {
+  background-color: var(--theme-color);
+  border: 1px solid var(--theme-color-lighter);
+  padding: 5px 10px;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.searchIcon {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.searchIcon:hover {
+  color: var(--accent-color);
+}
+
+.bellIcon, .profileIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.bellIcon:hover, .profileIcon:hover {
+  color: var(--accent-color);
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.trailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--theme-color-lighter);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trailerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.trailerInfo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.trailerActions {
+  display: flex;
+  gap: 10px;
+}
+
+.playIcon, .infoIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.playIcon:hover, .infoIcon:hover {
+  color: var(--accent-color);
+}
+
+.trailerVideo {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.continueWatching, .news, .movies, .tvShows {
+  margin-bottom: 20px;
+}
+
+.scrollableList {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.scrollableList::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 10px;
+}
+
+.scrollableList::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color-lighter);
+}

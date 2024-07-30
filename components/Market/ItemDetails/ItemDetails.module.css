@@ -1,0 +1,32 @@
+.itemDetails {
+  background-color: var(--theme-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itemDetails img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.itemDetails .title {
+  color: var(--accent-color);
+}
+
+.itemDetails p {
+  color: var(--text-color);
+}
+
+.itemDetails button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.itemDetails button:hover {
+  background-color: #0056b3;
+}

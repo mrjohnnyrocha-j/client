@@ -1,0 +1,43 @@
+.container {
+  padding: 20px;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  color: var(--text-color);
+}
+
+.offers, .dashboard {
+  margin-top: 20px;
+}
+
+.h1, .h2, .h3 {
+  color: var(--accent-color);
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li {
+  background-color: var(--theme-color-lighter);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--text-color);
+}

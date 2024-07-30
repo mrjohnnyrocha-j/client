@@ -1,0 +1,128 @@
+.calendarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.viewOptions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.viewOptions button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.viewOptions button:hover {
+  background-color: #0056b3;
+}
+
+.select {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.workCenterSection {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tableSection {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.tableContainer {
+  margin: 20px;
+  overflow-y: auto;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+
+.tableContainer th, .tableContainer td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableContainer th {
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px; /* Add space for the icon */
+}
+
+.tableContainer th:hover {
+  background-color: #f1f1f1;
+}
+
+.subColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.expandButton {
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.stageTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stageTable th, .stageTable td {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination span {
+  margin: 0 10px;
+}

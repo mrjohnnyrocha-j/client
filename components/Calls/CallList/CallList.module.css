@@ -1,0 +1,17 @@
+.callList {
+  display: flex;
+  flex-direction: column;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38979e;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px auto;
+}

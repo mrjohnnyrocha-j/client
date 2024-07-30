@@ -1,0 +1,32 @@
+.emojiWindow {
+  position: absolute;
+  bottom: 50px;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1001; /* Ensure it is above other elements */
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.emojiList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px;
+}

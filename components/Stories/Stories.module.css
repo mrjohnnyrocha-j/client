@@ -1,0 +1,116 @@
+/* Stories.module.css */
+
+.storiesContainer {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.story:hover {
+  transform: scale(1.1);
+}
+
+.storyImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.newStoryImage {
+  border-color: #007bff;
+}
+
+.oldStoryImage {
+  border-color: #ccc;
+}
+
+.addStory {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--theme-color-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--theme-color);
+}
+
+.plusIcon {
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+.uploadButton {
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.uploadButton:hover {
+  background-color: var(--theme-color-darker);
+}
+
+.story:hover .storyImage {
+  border-color: var(--accent-color);
+}
+
+.organicShape {
+  position: absolute;
+  background: radial-gradient(circle, rgba(0,255,255,0.8), rgba(0,255,0,0.4));
+  border-radius: 50%;
+  filter: blur(10px);
+  animation: move 16s infinite alternate;
+  display: none;
+  z-index: -1;
+}
+
+.story:hover .organicShape {
+  display: block;
+}
+
+.shape1 {
+  width: 60px;
+  height: 60px;
+  animation-duration: 6s;
+  filter: blur(8px);
+}
+
+.shape2 {
+  width: 80px;
+  height: 80px;
+  animation-duration: 10s;
+  filter: blur(15px);
+}
+
+@keyframes move {
+  0%, 25%, 50%, 75%, 100% {
+    transform: translate(0, 0);
+  }
+  6.25%, 31.25%, 56.25%, 81.25% {
+    transform: translate(50px, 50px);
+  }
+  12.5%, 37.5%, 62.5%, 87.5% {
+    transform: translate(-50px, -50px);
+  }
+  18.75%, 43.75%, 68.75%, 93.75% {
+    transform: translate(100px, -200px);
+  }
+}

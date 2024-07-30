@@ -1,0 +1,301 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  password    String
+  firstName   String
+  lastName    String
+  companyName String?
+  profilePic  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  posts           Post[]
+  picturePosts    PicturePost[]
+  contacts        Contact[]
+  calls           Call[]
+  chats           Chat[]
+  publicCalls     PublicCall[]
+  profile         Profile?
+  replies         Reply[]
+  likes           Like[]
+  views           View[]
+  videos          Video[]
+  shares          Share[]
+  stories         Story[]
+  orders          Order[]
+  browsingHistory BrowsingHistory[]
+  cartItems       Cart[]
+}
+
+model Video {
+  id          String   @id @default(uuid())
+  userId      String
+  videoUrl    String
+  description String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+
+  user   User    @relation(fields: [userId], references: [id])
+  likes  Like[]
+  views  View[]
+  shares Share[]
+}
+
+model Contact {
+  id        String   @id @default(uuid())
+  userId    String
+  name      String
+  phone     String
+  email     String
+  address   String?
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user  User   @relation(fields: [userId], references: [id])
+  calls Call[]
+  chats Chat[]
+}
+
+model Call {
+  id        String   @id @default(uuid())
+  userId    String
+  contactId String
+  callType  String
+  callTime  DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id])
+  contact Contact @relation(fields: [contactId], references: [id])
+}
+
+model Chat {
+  id        String   @id @default(uuid())
+  userId    String
+  contactId String
+  chatId    String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id])
+  contact Contact @relation(fields: [contactId], references: [id])
+}
+
+model PublicCall {
+  id         String   @id @default(uuid())
+  callId     String   @unique
+  hostUserId String
+  startTime  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @default(now())
+
+  hostUser User @relation(fields: [hostUserId], references: [id])
+}
+
+model PicturePost {
+  id             String   @id @default(uuid())
+  userId         String
+  userName       String
+  userProfilePic String
+  imageUrl       String
+  description    String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @default(now())
+
+  user    User    @relation(fields: [userId], references: [id])
+  replies Reply[]
+  likes   Like[]
+  views   View[]
+  shares  Share[]
+}
+
+model Post {
+  id             String   @id @default(uuid())
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  userId         String
+  userName       String
+  userProfilePic String?
+  content        String
+  postType       String
+
+  user    User    @relation(fields: [userId], references: [id])
+  replies Reply[]
+  likes   Like[]
+  views   View[]
+  shares  Share[]
+}
+
+model Reply {
+  id        String   @id @default(uuid())
+  postId    String
+  userId    String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  post          Post         @relation(fields: [postId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+  PicturePost   PicturePost? @relation(fields: [picturePostId], references: [id])
+  picturePostId String?
+}
+
+model Like {
+  id        String   @id @default(uuid())
+  postId    String?
+  userId    String
+  videoId   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  post          Post?        @relation(fields: [postId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+  video         Video?       @relation(fields: [videoId], references: [id])
+  PicturePost   PicturePost? @relation(fields: [picturePostId], references: [id])
+  picturePostId String?
+}
+
+model View {
+  id        String   @id @default(uuid())
+  postId    String?
+  userId    String
+  videoId   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  post          Post?        @relation(fields: [postId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+  video         Video?       @relation(fields: [videoId], references: [id])
+  PicturePost   PicturePost? @relation(fields: [picturePostId], references: [id])
+  picturePostId String?
+}
+
+model Share {
+  id        String   @id @default(uuid())
+  postId    String?
+  userId    String
+  videoId   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  post          Post?        @relation(fields: [postId], references: [id])
+  user          User         @relation(fields: [userId], references: [id])
+  video         Video?       @relation(fields: [videoId], references: [id])
+  PicturePost   PicturePost? @relation(fields: [picturePostId], references: [id])
+  picturePostId String?
+}
+
+model Profile {
+  id        String   @id @default(uuid())
+  userId    String   @unique
+  bio       String?
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Category {
+  id        Int      @id @default(autoincrement())
+  name      String
+  color     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Story {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  image     String?
+  userId    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id])
+}
+
+model Item {
+  id                        Int       @id @default(autoincrement())
+  title                     String
+  description               String?
+  size                      String?
+  color                     String?
+  rating                    Float?
+  price                     Float
+  estimated_delivery_date   DateTime?
+  destination_delivery_date DateTime?
+  stock                     Int
+  image_url                 String?
+
+  Sales           Sale[]
+  Offers          Offer[]
+  Orders          Order[]
+  browsingHistory BrowsingHistory[]
+  carts           Cart[]
+}
+
+model Sale {
+  id           Int      @id @default(autoincrement())
+  item_id      Int
+  quantity     Int
+  sale_date    DateTime
+  total_amount Float
+
+  Item Item @relation(fields: [item_id], references: [id])
+}
+
+model Offer {
+  id                  Int      @id @default(autoincrement())
+  item_id             Int
+  discount_percentage Float
+  start_date          DateTime
+  end_date            DateTime
+
+  Item Item @relation(fields: [item_id], references: [id])
+}
+
+model Order {
+  id           Int      @id @default(autoincrement())
+  item_id      Int
+  user_id      String
+  quantity     Int
+  order_date   DateTime
+  total_amount Float
+
+  Item Item @relation(fields: [item_id], references: [id])
+  User User @relation(fields: [user_id], references: [id])
+}
+
+model BrowsingHistory {
+  id       Int      @id @default(autoincrement())
+  userId   String
+  itemId   Int
+  viewedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+  item Item @relation(fields: [itemId], references: [id])
+}
+
+model Cart {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  itemId    Int
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+  item Item @relation(fields: [itemId], references: [id])
+}

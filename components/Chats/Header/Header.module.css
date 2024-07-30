@@ -1,0 +1,104 @@
+/* Header.module.css */
+
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navItem {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+  }
+  
+  .navItem:hover {
+    color: var(--accent-color);
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .searchBar {
+    padding: 5px 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .searchIcon {
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .searchIcon:hover {
+    color: var(--accent-color);
+  }
+  
+  .userMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .userMenu:hover .icon {
+    color: var(--accent-color);
+  }
+  
+  .icon {
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dropdownMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdownMenu li {
+    padding: 10px 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdownMenu li:hover {
+    background-color: var(--hover-color);
+  }
+  

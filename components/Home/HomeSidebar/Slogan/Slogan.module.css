@@ -1,0 +1,24 @@
+.sloganContainer {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .sloganText {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  .flashDown {
+    animation: flashDown 1s ease forwards;
+  }
+  
+  @keyframes flashDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

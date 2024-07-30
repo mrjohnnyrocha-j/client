@@ -1,0 +1,50 @@
+.calendarContainer {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datePicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datePicker input {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.datePicker .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.datePicker .react-datepicker__input-container {
+  width: 100%;
+}
+
+.datePicker .react-datepicker__time-list {
+  width: 100%;
+}
+
+.datePicker button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.datePicker button:hover {
+  background-color: #0056b3;
+}

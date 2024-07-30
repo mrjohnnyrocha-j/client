@@ -1,0 +1,86 @@
+/* components/PicturePost/PicturePost.module.css */
+.picturePost {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pictureItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.pictureWrapper {
+  position: relative;
+}
+
+.pictureImage {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.actions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #38979e;
+}
+
+.liked {
+  color: #ff4d4d;
+}
+
+.saved {
+  color: #32a852;
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #38979e;
+}
+
+.description {
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+
+.likes {
+  margin-top: 5px;
+  color: #aaaaaa;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.comment {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #444;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}

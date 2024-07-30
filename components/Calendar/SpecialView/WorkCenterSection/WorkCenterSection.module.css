@@ -1,0 +1,18 @@
+.workCenterContainer {
+    margin-bottom: 20px;
+  }
+  
+  .calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr); /* Adjust for hourly/daily/weekly view */
+    grid-gap: 5px;
+  }
+  
+  .eventBar {
+    background-color: #38979e;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  

@@ -1,0 +1,91 @@
+.threadContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(23, 23, 23, 0.95);
+  border-left: 1px solid #333;
+  overflow-y: auto;
+  z-index: 1000;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeButton {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.postContent {
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.replies {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.replyList {
+  list-style: none;
+  padding: 0;
+}
+
+.replyItem {
+  margin-bottom: 15px;
+}
+
+.replyContent {
+  margin-bottom: 5px;
+}
+
+.replyActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.liked {
+  color: #f39c12;
+}
+
+.newReply {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.newReplyInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  background-color: #171717;
+  color: white;
+}
+
+.newReplyButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #38979e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newReplyButton:hover {
+  background-color: #00cc00;
+}

@@ -1,0 +1,40 @@
+.navigationContainer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: var(--accent-color);
+  }
+  
+  .formControl {
+    margin: 10px 0;
+  }
+  
+  .transportOptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .transportButton {
+    margin: 5px;
+    text-transform: none;
+    color: var(--text-color);
+  }
+  
+  .transportButton .transportIcon {
+    margin-right: 5px;
+  }
+  
+  .searchButton {
+    margin-top: 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+  }
+  

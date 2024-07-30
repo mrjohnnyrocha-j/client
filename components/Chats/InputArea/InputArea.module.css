@@ -1,0 +1,58 @@
+.inputArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #333333;
+}
+
+.userInput {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  margin-left: 10px;
+  color: white;
+  background-color: #333333;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+}
+
+textarea.userInput {
+  height: 100px;
+}
+
+.sendButton {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #38979e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #00cc00;
+}
+
+.icon {
+  margin: 0 5px;
+  cursor: pointer;
+  color: #38979e;
+}
+
+.emojiPicker,
+.fileInput {
+  display: none; /* Adjust display styles as necessary */
+}
+
+.uploadedContent {
+  margin-top: 10px;
+}

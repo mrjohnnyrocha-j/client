@@ -1,0 +1,43 @@
+.picturePostsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pictureWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .picturePost {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .picture {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+  }
+  
+  .loadMoreButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #38979e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #00cc00;
+  }
+  

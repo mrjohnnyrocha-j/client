@@ -1,0 +1,40 @@
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .meta {
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .actions svg {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+.botIcon {
+  color: #ff4500;
+  margin-left: 5px;
+}
+
+.verifiedIcon {
+  color: #1e90ff;
+  margin-left: 5px;
+}
+
+.anonymousTag {
+  background-color: #aaa;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}

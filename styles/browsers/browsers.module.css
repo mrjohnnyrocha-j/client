@@ -1,0 +1,173 @@
+/* styles/browsers.module.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--theme-color-darker);
+  color: var(--text-color);
+  position: relative; 
+}
+
+.browserWindow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--accent-color);
+  padding: 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.chatWindow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--theme-color-darker);
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 2px solid var(--accent-color);
+  position: relative;
+}
+
+.resizer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: ew-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: left 0.3s;
+}
+
+.resizer:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.resizerIcon {
+  color: #38979e;
+  font-size: 16px;
+}
+
+.genieLampContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.genieLampIcon {
+  width: 128px;
+  height: 128px;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--theme-color-darker);
+  padding: 20px;
+  border-left: 2px solid var(--accent-color);
+}
+
+.chatIcon {
+  color: #38979e;
+  font-size: 36px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.genieAnimated .container {
+  background-color: #1e1e1e;
+}
+
+.genieStill .container {
+  background-color: #121212;
+}
+
+.browserWindow .goBackButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browserWindow .goBackButton:hover {
+  background-color: #0056b3;
+}
+
+.browserWindow .goBackButton svg {
+  font-size: 1.5em;
+}
+
+.pageContent {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.resultItem {
+  background-color: var(--theme-color-darker);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.resultItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aiResult {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.aiIcon {
+  font-size: 1.5em;
+  color: var(--accent-color);
+}
+
+.chatButton {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chatButton:hover {
+  background-color: var(--theme-secondary-color);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

@@ -1,0 +1,24 @@
+.taskList {
+    padding: 10px;
+    color: #38979e;
+  }
+  
+  .taskItem {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    color: #38979e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .taskItem:hover {
+    background-color: #e9ecef;
+  }
+  
+  .taskItem h3 {
+    margin: 0;
+  }
+  

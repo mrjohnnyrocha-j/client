@@ -1,0 +1,122 @@
+.bankPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--theme-color-darker);
+  }
+  
+  .header {
+    background-color: var(--theme-color-lighter);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--theme-color-lighter);
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navItem {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+  }
+  
+  .navItem:hover {
+    color: var(--accent-color);
+  }
+  
+  .content {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profileIcon, .statsIcon, .cardsIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s;
+  }
+  
+  .profileIcon:hover, .statsIcon:hover, .cardsIcon:hover {
+    color: var(--accent-color);
+  }
+  
+  .searchBar {
+    flex-grow: 1;
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color-lighter);
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 5px;
+  }
+  
+  .mainAccount {
+    background-color: var(--theme-color-lighter);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .mainAccount:hover {
+    background-color: var(--theme-color);
+  }
+  
+  .balance {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .accountActions {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .accountActions .fa-icon {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .accountActions .fa-icon:hover {
+    color: var(--accent-color);
+  }
+  
+  .draggableSections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .underConstruction {
+    display: none; /* Hide under construction section for now */
+  }
+  

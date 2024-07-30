@@ -1,0 +1,26 @@
+.container {
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+  }
+  
+  .accounts, .transactions {
+    margin-top: 20px;
+  }
+  
+  .heading {
+    color: #38979e;
+  }
+  
+  .ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+ .li {
+    background-color: #333333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,65 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    color: #e0e0e0;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #00ffff;
+    font-size: 1.5em;
+  }
+  
+  .waveContainer {
+    margin: 20px 0;
+  }
+  
+  .startRecordingButton,
+  .transcribeButton {
+    background: #00ffff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .startRecordingButton:hover,
+  .transcribeButton:hover {
+    background: #00cccc;
+  }
+  
+  .audioControls {
+    margin-top: 20px;
+  }
+  
+  .transcriptionText {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,50 @@
+.manageProfiles {
+    padding: 20px;
+    background-color: var(--theme-color);
+    border-radius: 10px;
+    color: var(--text-color);
+  }
+  
+  .manageProfiles h3 {
+    margin-bottom: 10px;
+  }
+  
+  .manageProfiles ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .manageProfiles li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--theme-color-lighter);
+  }
+  
+  .manageProfiles li:last-child {
+    border-bottom: none;
+  }
+  
+  .input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--theme-color-lighter);
+    width: calc(100% - 12px);
+  }
+  
+  .button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

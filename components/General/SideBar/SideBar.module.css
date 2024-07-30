@@ -1,0 +1,33 @@
+.lowerSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.sidebarItem {
+  color: #38979e;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebarItem:hover {
+  background-color: #232a27;
+  color: #38979e;
+}
+
+.sidebarItem.active {
+  color: #fff;
+}
+
+.itemText {
+  margin-left: 10px;
+}

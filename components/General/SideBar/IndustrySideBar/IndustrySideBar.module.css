@@ -1,0 +1,30 @@
+.sidebar {
+    width: 200px;
+    background-color: var(--theme-color-darker);
+    padding: 20px;
+    color: var(--text-color);
+  }
+  
+  .sidebar .h2 {
+    color: var(--accent-color);
+  }
+  
+  .sidebar .ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .ul .li {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sidebar .ul .li .a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

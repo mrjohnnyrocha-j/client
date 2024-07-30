@@ -1,0 +1,46 @@
+.item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.item h3 {
+  color: var(--accent-color);
+}
+
+.item p {
+  color: #666;
+}
+
+.viewButton,
+.cartButton {
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.viewButton:hover,
+.cartButton:hover {
+  background-color: #0056b3;
+}
+
+.viewButton.addedToCart,
+.cartButton.addedToCart {
+  background-color: #28a745;
+  cursor: default;
+}

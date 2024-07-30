@@ -1,0 +1,56 @@
+
+.resultCard {
+  background-color: var(--background-color);
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resultCard:hover,
+.resultCard:focus {
+  background-color: var(--hover-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.resultCard:focus {
+  border-color: var(--focus-color);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+}
+
+.resultHeader a {
+  color: var(--text-color-primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resultHeader a:hover,
+.resultHeader a:focus {
+  text-decoration: underline;
+}
+
+.resultDetails {
+  margin-top: 10px;
+  color: var(--text-color-secondary);
+}
+
+.url {
+  color: var(--text-color-url);
+}
+
+.dates {
+  color: var(--text-color-secondary);
+  font-size: 0.85em;
+}
+
+.contentPreview {
+  color: var(--text-color-preview);
+  margin-top: 5px;
+}

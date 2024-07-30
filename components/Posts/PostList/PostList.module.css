@@ -1,0 +1,99 @@
+/* PostList.module.css */
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postItem {
+  background-color: var(--theme-header-color);
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.postItem:hover {
+  background-color: var(--theme-header-color-light);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userName {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.postDate {
+  color: var(--text-color-light);
+  font-size: 0.9em;
+}
+
+.postContent {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postActions {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.actionButton:hover {
+  color: var(--theme-secondary-color);
+}
+
+.actionButton svg {
+  font-size: 1.2em;
+}
+
+.botIcon {
+  color: #ff4500;
+  margin-left: 5px;
+}
+
+.verifiedIcon {
+  color: #1e90ff;
+  margin-left: 5px;
+}
+
+.anonymousTag {
+  background-color: #aaa;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}

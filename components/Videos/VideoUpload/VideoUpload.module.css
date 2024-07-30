@@ -1,0 +1,22 @@
+/* VideoUpload.module.css */
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .videoInput {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .uploadButton {
+    padding: 10px 20px;
+    background-color: #38979e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

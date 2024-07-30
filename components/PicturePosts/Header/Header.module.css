@@ -1,0 +1,45 @@
+/* components/Header/Header.module.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--theme-color);
+    padding: 10px 20px;
+    color: var(--text-color);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 5px 10px;
+    border: 1px solid var(--theme-border-color);
+    border-radius: 5px;
+  }
+  
+  .searchButton {
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileIcon, .signOutButton, .signInButton {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  

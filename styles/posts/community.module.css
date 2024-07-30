@@ -1,0 +1,61 @@
+/* community.module.css */
+.communityContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--theme-background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.newPostSection {
+  margin-bottom: 20px;
+}
+
+.newPostForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.newPostTextarea {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid var(--theme-header-color);
+  border-radius: 5px;
+  background-color: var(--theme-background-color);
+  color: var(--text-color);
+  resize: none;
+}
+
+.newPostButton {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newPostButton:disabled {
+  background-color: #888;
+}
+
+.loadMoreButton {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: center;
+}

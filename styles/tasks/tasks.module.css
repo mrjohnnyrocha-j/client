@@ -1,0 +1,68 @@
+/* styles/tasks.module.css */
+
+.tasksContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.detailContent {
+  width: 300px;
+  padding: 20px;
+  background-color: #2d2e2f;
+  overflow-y: auto;
+}
+
+.projectList, .taskList, .docList, .fileList, .otherList {
+  padding: 10px;
+}
+
+.projectItem, .taskItem, .docItem, .fileItem, .otherItem {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.projectItem:hover, .taskItem:hover, .docItem:hover, .fileItem:hover, .otherItem:hover {
+  background-color: #e9ecef;
+}
+
+.projectItem h3, .taskItem h3, .docItem h3, .fileItem h3, .otherItem h3 {
+  margin: 0;
+}
+
+.detailContent h2 {
+  margin-top: 0;
+}
+
+.taskNavigator {
+  width: 200px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.taskNavigator ul {
+  list-style: none;
+  padding: 0;
+}
+
+.taskNavigator li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.taskNavigator li:hover {
+  background-color: #e9ecef;
+}

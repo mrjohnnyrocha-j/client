@@ -1,0 +1,55 @@
+/* styles/ShareWindow.module.css */
+.shareWindow {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.message {
+  margin-bottom: 20px;
+  white-space: pre-wrap; /* Ensure the message respects line breaks */
+}
+
+.shareInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  background-color: #171717;
+  color: white;
+  border-radius: 5px;
+}
+
+.shareButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #38979e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shareButton:hover {
+  background-color: #00cc00;
+}

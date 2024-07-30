@@ -1,0 +1,57 @@
+.chatPageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chatContainer {
+  position: relative;
+  flex-grow: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #38979e;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.shrink {
+  width: 70%;
+  transition: width 0.3s;
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #2c2c2c;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#chat-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#lottie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.threadContainer {
+  width: 30%;
+  border-left: 1px solid #38979e;
+}

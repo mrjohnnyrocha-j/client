@@ -1,0 +1,27 @@
+.homeSidebar {
+    width: 250px;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .homeSidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .homeSidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .homeSidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .homeSidebar li:hover {
+    background-color: #444;
+  }
+  

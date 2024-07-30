@@ -1,0 +1,24 @@
+/* TabOptions.module.css */
+.tabOptions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    border-color: #ccc;
+  }
+  
+  .tab.active {
+    border-color: #38979e;
+    font-weight: bold;
+  }
+  

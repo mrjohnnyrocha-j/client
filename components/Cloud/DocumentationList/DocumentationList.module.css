@@ -1,0 +1,23 @@
+.docList {
+    padding: 10px;
+  }
+  
+  .docItem {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    color: #38979e;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .docItem:hover {
+    background-color: #e9ecef;
+  }
+  
+  .docItem h3 {
+    margin: 0;
+  }
+  

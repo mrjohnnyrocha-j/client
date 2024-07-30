@@ -1,0 +1,98 @@
+/* components/Browsers/BrowserWindow/BrowserWindow.module.css */
+
+.browserWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--theme-color-lighter);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.iframeContainer {
+  flex-grow: 1;
+  position: relative;
+}
+
+.goBackButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goBackButton:hover {
+  background-color: #0056b3;
+}
+
+.goBackButton svg {
+  font-size: 1.5em;
+}
+
+.pageContent {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.resultItem {
+  background-color: var(--theme-color-darker);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.resultItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aiResult {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.aiIcon {
+  font-size: 1.5em;
+  color: var(--accent-color);
+}
+
+.chatButton {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chatButton:hover {
+  background-color: var(--theme-secondary-color);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

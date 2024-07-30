@@ -1,0 +1,61 @@
+/* components/Contacts/Header/Header.module.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--theme-header-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .backButton {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+  
+  .logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .searchContainer {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--theme-background-color);
+    color: var(--text-color);
+  }
+  
+  .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profilePic {
+    border-radius: 50%;
+  }
+  
+  .profileIcon {
+    font-size: 1.5em;
+    color: var(--accent-color);
+  }
+  

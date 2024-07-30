@@ -1,0 +1,109 @@
+.storyWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(23, 23, 23, 0.9);
+  padding: 20px;
+  border: 1px solid #38979e;
+  border-radius: 8px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navigationButtonLeft, .navigationButtonRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #38979e;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.navigationButtonLeft {
+  left: 10px;
+}
+
+.navigationButtonRight {
+  right: 10px;
+}
+
+.storyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.storyImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #38979e;
+}
+
+.liked {
+  color: #ff4d4d;
+}
+
+.replyContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.replyInput {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #333333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: white;
+}
+
+.replyButton {
+  padding: 10px 15px;
+  background-color: #38979e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.replyButton:hover {
+  background-color: #007bff;
+}

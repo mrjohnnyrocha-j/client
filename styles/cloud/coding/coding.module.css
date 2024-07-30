@@ -1,0 +1,114 @@
+/* styles/coding.module.css */
+.codingPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  background-color: #2c2c2c;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  cursor: pointer;
+  color: #38979e;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: #00cc00;
+}
+
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 5px 0;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sidebar li:hover {
+  color: #00cc00;
+  background-color: #444;
+  padding-left: 5px;
+}
+
+.editor {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  color: white;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.terminalContainer {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border-top: 2px solid #333;
+  transition: height 0.3s ease-in-out;
+  position: relative;
+}
+
+.terminalContainer:hover {
+  height: 60%;
+}
+
+.terminalResizeHandle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  cursor: ns-resize;
+  background-color: #444;
+}

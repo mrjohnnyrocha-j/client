@@ -1,0 +1,112 @@
+.container {
+  background-color: var(--theme-color);
+  color: var(--accent-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tabContent {
+  margin-top: 20px;
+  color: var(--accent-color);
+}
+
+.tabContent:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.mapContainer {
+  height: 400px;
+  width: 100%;
+}
+
+.goContainer, .rideContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.formControl {
+  margin: 10px;
+  width: 80%;
+  background-color: var(--theme-color-lighter);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.transportOptions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.transportButton {
+  margin: 5px;
+  text-transform: none;
+  background-color: var(--theme-color-lighter);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.transportButton:hover {
+  background-color: #0056b3;
+  color: var(--text-color);
+}
+
+.transportIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.goButton, .rideButton {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.goButton:hover, .rideButton:hover {
+  background-color: #00cc00;
+  color: var(--text-color);
+}
+
+.goButton:disabled, .rideButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.startButton {
+  background-color: #ff4500;
+  color: var(--text-color);
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.startButton:hover {
+  background-color: #e33d00;
+  color: var(--text-color);
+}
+
+.errorMessage {
+  margin-top: 10px;
+  color: #ff6f61;
+}
+
+.tab {
+  color: var(--accent-color);
+}
+
+.tab:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}

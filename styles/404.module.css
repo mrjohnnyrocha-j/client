@@ -1,0 +1,33 @@
+/* styles/404.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .errorCode {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .message {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .homeLink {
+    font-size: 1.2rem;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .homeLink:hover {
+    text-decoration: underline;
+  }
+  
