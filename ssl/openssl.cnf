@@ -1,0 +1,17 @@
+[ req ]
+default_bits       = 2048
+default_md         = sha256
+default_keyfile    = localhost.key
+prompt             = no
+encrypt_key        = no
+
+distinguished_name = req_distinguished_name
+
+[ req_distinguished_name ]
+countryName                =  PT
+localityName               = Matosinhos
+organizationName           = j.holdings
+organizationalUnitName     = Board 
+commonName                 = localhost
+emailAddress               = j4.computer@outlook.com
+
