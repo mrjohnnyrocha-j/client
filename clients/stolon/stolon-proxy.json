@@ -1,0 +1,5 @@
+{
+    "etcdEndpoints": ["http://etcd:2379"],
+    "listenAddress": "0.0.0.0:5432",
+    "clusterName": "my_stolon_cluster"
+  }

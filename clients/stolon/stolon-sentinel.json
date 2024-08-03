@@ -1,0 +1,4 @@
+{
+    "etcdEndpoints": ["http://etcd:2379"],
+    "clusterName": "my_stolon_cluster"
+  }

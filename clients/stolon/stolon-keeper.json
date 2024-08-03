@@ -1,0 +1,7 @@
+
+{
+    "etcdEndpoints": ["http://etcd:2379"],
+    "dataDir": "/var/lib/postgresql/data",
+    "clusterName": "my_stolon_cluster"
+  }
+  
