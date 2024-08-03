@@ -1,2 +1,0 @@
-"postgres" "md50566713667bf0eb65aa970e0d7d6381b"
-"doadmin" "md523bd8613ad6541a0ad7a95f985da54db"
